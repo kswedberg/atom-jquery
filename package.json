@@ -1,15 +1,13 @@
 {
   "name": "jQuery",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A collection of snippets covering nearly all of the jQuery API.",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/kswedberg/atom-jquery",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "readmeFilename": "README.md"
 }
