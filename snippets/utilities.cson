@@ -26,7 +26,7 @@
     '''
   "$.inArray":
     prefix: "inArray"
-    body: "\\$.inArray(${1:value}, ${2:array})$0"
+    body: "$.inArray(${1:value}, ${2:array})$0"
   "$.inArray chain":
     prefix: ".inArray"
     body: ".inArray(${1:value}, ${2:array})$0"

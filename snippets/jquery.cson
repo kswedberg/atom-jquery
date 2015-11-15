@@ -24,7 +24,7 @@
     '''
   "$.holdReady":
     prefix: "holdReady"
-    body: "\\$.holdReady(${1:hold})$0"
+    body: "$.holdReady(${1:hold})$0"
   "$.holdReady chain":
     prefix: ".holdReady"
     body: ".holdReady(${1:hold})$0"
