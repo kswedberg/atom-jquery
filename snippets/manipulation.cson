@@ -25,6 +25,12 @@
   data:
     prefix: "data"
     body: "data((${1:string or object})$0"
+  detach:
+    prefix: "detach"
+    body: "detach(${1:selector})$0"
+  empty:
+    prefix: "empty"
+    body: "empty()$0"
   hasClass:
     prefix: "hasClass"
     body: "hasClass(${1:className})$0"

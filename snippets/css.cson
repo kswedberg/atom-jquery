@@ -25,6 +25,9 @@
   outerWidth:
     prefix: "outerWidth"
     body: "outerWidth()$0"
+  position:
+    prefix: "position"
+    body: "position()$0"
   scrollLeft:
     prefix: "scrollLeft"
     body: "scrollLeft(${1:value})$0"

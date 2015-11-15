@@ -9,6 +9,17 @@
     body: '''
       .ajax(${1:url}${2:, ${3:options}})$0
     '''
+  "$.ajaxPrefilter":
+    prefix: "ajaxPrefilter"
+    body: '''
+      $.ajaxPrefilter(${1:${2:dataTypes}, }${3:handler})$0
+    '''
+  "$.ajaxPrefilter chain":
+    prefix: ".ajaxPrefilter"
+    body: '''
+      .ajaxPrefilter(${1:${2:dataTypes}, }${3:handler})$0
+    '''
+
   "$.ajaxSetup":
     prefix: "ajaxSetup"
     body: '''
@@ -18,6 +29,16 @@
     prefix: ".ajaxSetup"
     body: '''
       .ajaxSetup(${1:options})$0
+    '''
+  "$.ajaxTransport":
+    prefix: "ajaxTransport"
+    body: '''
+      $.ajaxTransport(${1:dataType}, ${2:handler})$0
+    '''
+  "$.ajaxTransport chain":
+    prefix: ".ajaxTransport"
+    body: '''
+      .ajaxTransport(${1:dataType}, ${2:handler})$0
     '''
 
   "$.get":
