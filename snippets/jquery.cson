@@ -24,10 +24,17 @@
     '''
   "$.holdReady":
     prefix: "holdReady"
-    body: "$.holdReady(${1:hold})$0"
+    body: "\\$.holdReady(${1:hold})$0"
+  "$.holdReady chain":
+    prefix: ".holdReady"
+    body: ".holdReady(${1:hold})$0"
+
   "$.noConflict":
     prefix: "noConflict"
-    body: "$.noConflict(${1:removeAll})$0"
+    body: "\\$.noConflict(${1:removeAll})$0"
+  "$.noConflict chain":
+    prefix: ".noConflict"
+    body: ".noConflict(${1:removeAll})$0"
 
   get:
     prefix: "getjq"

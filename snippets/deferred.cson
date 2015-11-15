@@ -37,8 +37,18 @@
     body: '''
       $.Deferred(${1:deferreds})$0
     '''
+  "$.Deferred chain":
+    prefix: ".Deferred"
+    body: '''
+      .Deferred(${1:deferreds})$0
+    '''
   "$.when":
     prefix: "when"
     body: '''
       $.when(${1:deferreds})$0
+    '''
+  "$.when chain":
+    prefix: ".when"
+    body: '''
+      .when(${1:deferreds})$0
     '''

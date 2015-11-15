@@ -4,25 +4,61 @@
     body: '''
       $.ajax(${1:url}${2:, ${3:options}})$0
     '''
+  "$.ajax chain" :
+    prefix: ".ajax"
+    body: '''
+      .ajax(${1:url}${2:, ${3:options}})$0
+    '''
+  "$.ajaxSetup":
+    prefix: "ajaxSetup"
+    body: '''
+      $.ajaxSetup(${1:options})$0
+    '''
+  "$.ajaxSetup chain":
+    prefix: ".ajaxSetup"
+    body: '''
+      .ajaxSetup(${1:options})$0
+    '''
+
   "$.get":
     prefix: "getAjax"
     body: '''
       $.get(${1:path})$0
+    '''
+  "$.get chain":
+    prefix: ".getAjax"
+    body: '''
+      .get(${1:path})$0
     '''
   "$.getJSON":
     prefix: "getJSON"
     body: '''
       $.getJSON(${1:path})$0
     '''
+  "$.getJSON chain":
+    prefix: ".getJSON"
+    body: '''
+      .getJSON(${1:path})$0
+    '''
   "$.getScript":
     prefix: "getScript"
     body: '''
       $.getScript(${1:path})$0
     '''
+  "$.getScript chain":
+    prefix: ".getScript"
+    body: '''
+      .getScript(${1:path})$0
+    '''
   "$.post":
     prefix: "post"
     body: '''
       $.post(${1:path})$0
+    '''
+  "$.post chain":
+    prefix: ".post"
+    body: '''
+      .post(${1:path})$0
     '''
 
   ajaxComplete:
@@ -45,11 +81,6 @@
       ajaxSend(${1:function(${2:event, xhr, settings}) {
       	${3:// stuff to do before an AJAX request is sent}
       \\}})$0
-    '''
-  "$.ajaxSetup":
-    prefix: "ajaxSetup"
-    body: '''
-      $.ajaxSetup(${1:options})$0
     '''
   ajaxStart:
     prefix: "ajaxStart"
