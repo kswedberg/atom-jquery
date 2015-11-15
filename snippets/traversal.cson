@@ -33,18 +33,11 @@
     body: "eq(${1:index})$0"
   filter:
     prefix: "filterjq"
-    body: "filter(${1:selector})$0"
+    body: "filter(${1:selector/fn})$0"
 
-  "filter (function)":
-    prefix: "filterjqFun"
-    body: '''
-      filter(function(index) {
-      	${1:return ${2:something};}
-      })
-    '''
   find:
     prefix: "findjq"
-    body: "find(${1:selector})$0"
+    body: "find(${1:selector/fn})$0"
   first:
     prefix: "first"
     body: "first()$0"
@@ -80,7 +73,7 @@
     body: "nextUntil(${1:selector})$0"
   not:
     prefix: "not"
-    body: "not(${1:selector})$0"
+    body: "not(${1:selector/fn})$0"
   offsetParent:
     prefix: "offsetParent"
     body: "offsetParent()$0"
