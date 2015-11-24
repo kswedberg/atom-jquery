@@ -24,7 +24,7 @@
     body: "clone(${1:withDataAndEvents}${2, ${3:deepWithDataAndEvents}})$0"
   data:
     prefix: "data"
-    body: "data((${1:string/object})$0"
+    body: "data(${1:string/object})$0"
   detach:
     prefix: "detach"
     body: "detach(${1:selector})$0"
