@@ -2,7 +2,10 @@
   "name": "jQuery",
   "version": "1.1.1",
   "description": "A collection of snippets covering nearly all of the jQuery API.",
-  "keywords": [],
+  "keywords": [
+    "jQuery",
+    "JavaScript"
+  ],
   "repository": "https://github.com/kswedberg/atom-jquery",
   "license": "MIT",
   "engines": {

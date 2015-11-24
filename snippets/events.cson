@@ -2,19 +2,19 @@
   off:
     prefix: "off"
     body: '''
-      off(${1:eventNames}${2, ${3:functionName}})$0
+      off(${1:eventNames}${2:, ${3:selector}}${4, ${5:functionName}})$0
     '''
   on:
     prefix: "on"
     body: '''
-      on(${1:eventNames}, ${2:function(${3:event}) {
+      on(${1:eventNames}${2:, ${3:selector}}, ${4:function(${5:event}) {
         $0
       \\}})
     '''
   one:
     prefix: "one"
     body: '''
-      one(${1:eventNames}, ${2:function(${3:event}) {
+      one(${1:eventNames}${2:, ${3:selector}}, ${4:function(${5:event}) {
         $0
       \\}})
     '''
