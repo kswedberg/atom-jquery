@@ -7,7 +7,7 @@
     body: "after(${1:htmlString/elem/fn/etc})$0"
   append:
     prefix: "append"
-    body: "append(${1:htmlString/elem/fn/etc)$0"
+    body: "append(${1:htmlString/elem/fn/etc})$0"
   appendTo:
     prefix: "appendTo"
     body: "appendTo(${1:selector/etc})$0"
