@@ -6,7 +6,10 @@
     "jQuery",
     "JavaScript"
   ],
-  "repository": "https://github.com/kswedberg/atom-jquery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kswedberg/atom-jquery"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
