@@ -54,7 +54,7 @@
     prefix: "queue"
     body: "queue(${1:queueName}${2:, ${3:newQueue}})$0"
   slideDown:
-    prefix: "slideDownCallback"
+    prefix: "slideDown"
     body: '''
       slideDown(${1:speed}${2:, function() {
       	${0://Stuff to do *after* the animation takes place}
@@ -68,7 +68,7 @@
       \\}})
     '''
   slideUp:
-    prefix: "slideUpCallback"
+    prefix: "slideUp"
     body: '''
       slideUp(${1:speed}${2:, function() {
       	${0://Stuff to do *after* the animation takes place}
