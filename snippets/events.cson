@@ -8,14 +8,14 @@
     prefix: "on"
     body: '''
       on(${1:eventNames}${2:, ${3:selector}}, ${4:function(${5:event}) {
-        $0
+      	$0
       \\}})
     '''
   one:
     prefix: "one"
     body: '''
       one(${1:eventNames}${2:, ${3:selector}}, ${4:function(${5:event}) {
-        $0
+      	$0
       \\}})
     '''
   trigger:

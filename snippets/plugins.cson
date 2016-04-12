@@ -3,7 +3,7 @@
     prefix: "pluginAnimation"
     body: '''
       jQuery.fn.${1:myeffect} = function(speed, easing, callback) {
-        return this.animate({${2:param1}: ${3:'value'}}, speed, easing, callback);
+      	return this.animate({${2:param1}: ${3:'value'}}, speed, easing, callback);
       };
     '''
   "plugin (widget)":
@@ -11,118 +11,118 @@
     body: '''
       // jQuery ${1:pluginName} Plugin
       (function($) {
-        var settings = {
-          ${30:}
-        };
+      	var settings = {
+      		${30:}
+      	};
 
-        var methods = {
-          init: function(options) {
+      	var methods = {
+      		init: function(options) {
 
-            this.each(function() {
-              var data, dataId, opts;
-              var ${10:$this} = $(this);
+      			this.each(function() {
+      				var data, dataId, opts;
+      				var ${10:$this} = $(this);
 
-              $10.$1('options', options);
-              data = $10.data('$1') || {};
-              opts = data.options;
+      				${10:$this}.$1('options', options);
+      				data = ${10:$this}.data('$1') || {};
+      				opts = data.options;
 
-              // If the plugin hasn't been initialized yet
-              if ( !data.$1 ) {
-                dataId = +new Date();
+      				// If the plugin hasn't been initialized yet
+      				if ( !data.$1 ) {
+      					dataId = +new Date();
 
-                data = {
-                  $1: true,
-                  options: opts,
-                  id: dataId
-                };
+      					data = {
+      						$1: true,
+      						options: opts,
+      						id: dataId
+      					};
 
-                ${14:// create element and append to body
-                var \\$$1 = $('<div></div>')
-                .attr({
-                  'class': '$1'
-                \\})
-                .appendTo('body');
+      					${14:// create element and append to body
+      					var \\$$1 = $('<div></div>')
+      					.attr({
+      						'class': '$1'
+      					\\})
+      					.appendTo('body');
 
-                // Associate created element with invoking element
-                \\$$1.data( '$1', {target: $10, id: dataId\\} );
+      					// Associate created element with invoking element
+      					\\$$1.data( '$1', {target: ${10:$this}, id: dataId\\} );
 
-                // And vice versa
-                data.$1 = \\$$1;
+      					// And vice versa
+      					data.$1 = \\$$1;
       }
-                $10.data('$1', data);
-              } // !data.$1
-              $0
-            });
+      					${10:$this}.data('$1', data);
+      				} // !data.$1
+      				$0
+      			});
 
-            return this;
-          },
-          destroy: function() {
+      			return this;
+      		},
+      		destroy: function() {
 
-            this.each(function() {
+      			this.each(function() {
 
-              var $10 = $(this);
-              var data = $10.data('$1');
+      				var ${10:$this} = $(this);
+      				var data = ${10:$this}.data('$1');
 
-              // Remove created elements, unbind namespaced events, and remove data
-              $(document).off('.$1');
-              data.$1.remove();
-              $10.off('.$1')
-              .removeData('$1');
+      				// Remove created elements, unbind namespaced events, and remove data
+      				$(document).off('.$1');
+      				data.$1.remove();
+      				${10:$this}.off('.$1')
+      				.removeData('$1');
 
-            });
+      			});
 
-            return this;
-          },
-          options: function(options) {
+      			return this;
+      		},
+      		options: function(options) {
 
-            this.each(function() {
-              var $10 = $(this);
+      			this.each(function() {
+      				var ${10:$this} = $(this);
 
-              // don't use our getData() function here
-              // because we want an object regardless
-              var data = $10.data('$1') || {};
-              var opts = data.options || {};
+      				// don't use our getData() function here
+      				// because we want an object regardless
+      				var data = ${10:$this}.data('$1') || {};
+      				var opts = data.options || {};
 
-              // deep extend (merge) default settings, per-call options, and options set with:
-              // html10 data-$1 options JSON and $('selector').$1('options', {});
-              opts = $.extend( true, {}, $.fn.$1.defaults, opts, options || {} );
-              data.options = opts;
-              $.data(this, '$1', data);
-            });
+      				// deep extend (merge) default settings, per-call options, and options set with:
+      				// html10 data-$1 options JSON and $('selector').$1('options', {});
+      				opts = $.extend( true, {}, $.fn.$1.defaults, opts, options || {} );
+      				data.options = opts;
+      				$.data(this, '$1', data);
+      			});
 
-            return this;
-          }
-        };
+      			return this;
+      		}
+      	};
 
-        var protoSlice = Array.prototype.slice;
+      	var protoSlice = Array.prototype.slice;
 
-        $.fn.$1 = function(method) {
+      	$.fn.$1 = function(method) {
 
-          if (methods[method]) {
-            return methods[method].apply(this, protoSlice.call( arguments, 1));
-          } else if (typeof method === 'object' || ! method) {
-            return methods.init.apply( this, arguments );
-          } else {
-            $.error('Method ' +  method + ' does not exist on jQuery.fn.$1');
-          }
+      		if (methods[method]) {
+      			return methods[method].apply(this, protoSlice.call( arguments, 1));
+      		} else if (typeof method === 'object' || ! method) {
+      			return methods.init.apply( this, arguments );
+      		} else {
+      			$.error('Method ' +  method + ' does not exist on jQuery.fn.$1');
+      		}
 
-        };
+      	};
 
-        $.extend($.fn.$1, {
-          defaults: settings
-        });
+      	$.extend($.fn.$1, {
+      		defaults: settings
+      	});
 
-        function getData(el) {
-          var $1, opts,
-              $10 = $(el),
-              data = $10.data('$1') || {};
+      	function getData(el) {
+      		var $1, opts;
+      		var ${10:$this} = $(el);
+      		var data = ${10:$this}.data('$1') || {};
 
-          if (!data.$1) {
-            return false;
-          }
+      		if (!data.$1) {
+      			return false;
+      		}
 
-          return data;
-        }
+      		return data;
+      	}
 
       })(jQuery);
 
@@ -131,12 +131,13 @@
     prefix: "pluginSelector"
     body: '''
       (function($) {
-        $.extend($.expr[':'], {
-          ${1:selectorName}: function(element, index, matches, set) {
-            $0
-            return something;
-          }
-        });
+      	$.extend($.expr[':'], {
+      		${1:selectorName}: function(element, index, matches, set) {
+      			$0
+
+      			return something;
+      		}
+      	});
       })(jQuery);
 
     '''
@@ -144,27 +145,27 @@
     prefix: "pluginBasic"
     body: '''
       (function($) {
-        ${2:// ${3:What does the $1 plugin do?}}
-        $.fn.${1:pluginName} = function(options) {
+      	${2:// ${3:What does the $1 plugin do?}}
+      	$.fn.${1:pluginName} = function(options) {
 
-          if (!this.length) { return this; }
+      		if (!this.length) { return this; }
 
-          var opts = $.extend(${5:true, }{}, $.fn.$1.defaults, options);
+      		var opts = $.extend(${5:true, }{}, $.fn.$1.defaults, options);
 
-          this.each(function() {
-            var ${6:$this} = $(this);
-            $0
-          });
+      		this.each(function() {
+      			var ${6:$this} = $(this);
+      			$0
+      		});
 
-          return this;
-        };
+      		return this;
+      	};
 
-        // default options
-        $.fn.$1.defaults = {
-          ${4:defaultOne: true,
-          defaultTwo: false,
-          defaultThree: 'yay!'}
-        };
+      	// default options
+      	$.fn.$1.defaults = {
+      		${4:defaultOne: true,
+      		defaultTwo: false,
+      		defaultThree: 'yay!'}
+      	};
 
       })(jQuery);
 
