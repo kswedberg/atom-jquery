@@ -30,7 +30,7 @@
     prefix: "state"
     body: "state()$0"
   "deferred.then":
-    prefix: "then"
+    prefix: "thenjq"
     body: "then(${1:doneCallbacks}${2:, ${3:failCallbacks}})$0"
   "$.Deferred":
     prefix: "Deferred"
