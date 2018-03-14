@@ -15,13 +15,13 @@
     prefix: "promiseDeferred"
     body: "promise(${1:targetObject})$0"
   "deferred.reject":
-    prefix: "reject"
+    prefix: "rejectjq"
     body: "reject(${1:args})$0"
   "deferred.rejectWith":
     prefix: "rejectWith"
     body: "rejectWith(${1:context}${2:, }${3:args})$0"
   "deferred.resolve":
-    prefix: "resolve"
+    prefix: "resolvejq"
     body: "resolve(${1:args})$0"
   "deferred.resolveWith":
     prefix: "resolveWith"
