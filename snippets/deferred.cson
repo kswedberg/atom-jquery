@@ -8,6 +8,9 @@
   "deferred.fail":
     prefix: "fail"
     body: "fail(${1:failCallbacks})$0"
+  "deferred.catch":
+    prefix: "catch"
+    body: "catch(${1:failCallback})$0"
   "deferred.progress":
     prefix: "progress"
     body: "progress(${1:progressCallbacks})$0"

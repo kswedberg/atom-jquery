@@ -29,6 +29,27 @@
     prefix: ".holdReady"
     body: ".holdReady(${1:hold})$0"
 
+  "$.readyException":
+    prefix: "readyException"
+    body: "$.readyException(${1:error})$0"
+  "$.readyException chain":
+    prefix: ".readyException"
+    body: ".readyException(${1:error})$0"
+
+  "$.escapeSelector":
+    prefix: "escapeSelector"
+    body: "$.escapeSelector(${1:selector})$0"
+  "$.escapeSelector chain":
+    prefix: ".escapeSelector"
+    body: ".escapeSelector(${1:selector})$0"
+
+  "$.htmlPrefilter":
+    prefix: "htmlPrefilter"
+    body: "$.htmlPrefilter(${1:html})$0"
+  "$.htmlPrefilter chain":
+    prefix: ".htmlPrefilter"
+    body: ".htmlPrefilter(${1:html})$0"
+
   "$.noConflict":
     prefix: "noConflict"
     body: "\\$.noConflict(${1:removeAll})$0"

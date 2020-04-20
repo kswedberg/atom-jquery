@@ -2,9 +2,7 @@
   add:
     prefix: "add"
     body: "add(${1:selector/elements/html})$0"
-  andSelf:
-    prefix: "addBack"
-    body: "addBack(${1:filter})$0"
+
   children:
     prefix: "children"
     body: "children(${1:selector})$0"
@@ -31,6 +29,9 @@
   eq:
     prefix: "eq"
     body: "eq(${1:index})$0"
+  even:
+    prefix: "even"
+    body: "even()$0"
   filter:
     prefix: "filterjq"
     body: "filter(${1:selector/fn})$0"
@@ -74,6 +75,9 @@
   not:
     prefix: "not"
     body: "not(${1:selector/fn})$0"
+  odd:
+    prefix: "odd"
+    body: "odd()$0"
   offsetParent:
     prefix: "offsetParent"
     body: "offsetParent()$0"
